@@ -1,0 +1,1 @@
+cmd_/mnt/android/project/kernel/lkmexam/lkmexam.ko := ld -r -m elf_x86_64  --build-id=sha1  -T scripts/module.lds -o /mnt/android/project/kernel/lkmexam/lkmexam.ko /mnt/android/project/kernel/lkmexam/lkmexam.o /mnt/android/project/kernel/lkmexam/lkmexam.mod.o;  true

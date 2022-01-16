@@ -1,0 +1,1 @@
+cmd_/mnt/android/project/kernel/lkmexam/Module.symvers := sed 's/ko$$/o/' /mnt/android/project/kernel/lkmexam/modules.order | scripts/mod/modpost -m -a   -o /mnt/android/project/kernel/lkmexam/Module.symvers -e -i Module.symvers   -T -
