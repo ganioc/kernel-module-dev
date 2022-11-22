@@ -1,0 +1,1 @@
+cmd_/mnt/data/project/drivers/kernel-module-dev/cookbook-prj/chrdev_legacy/Module.symvers := sed 's/\.ko$$/\.o/' /mnt/data/project/drivers/kernel-module-dev/cookbook-prj/chrdev_legacy/modules.order | scripts/mod/modpost -m -a  -o /mnt/data/project/drivers/kernel-module-dev/cookbook-prj/chrdev_legacy/Module.symvers -e -i Module.symvers   -T -

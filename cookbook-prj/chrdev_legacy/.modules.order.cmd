@@ -1,0 +1,1 @@
+cmd_/mnt/data/project/drivers/kernel-module-dev/cookbook-prj/chrdev_legacy/modules.order := {   echo /mnt/data/project/drivers/kernel-module-dev/cookbook-prj/chrdev_legacy/chrdev_legacy.ko; :; } | awk '!x[$$0]++' - > /mnt/data/project/drivers/kernel-module-dev/cookbook-prj/chrdev_legacy/modules.order

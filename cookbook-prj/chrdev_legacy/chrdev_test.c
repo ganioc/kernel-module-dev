@@ -51,8 +51,18 @@ int main(int argc, char*argv[]){
         dump("data written are: ", buf+c, n);
     }
 
+    /* You should reopen the file to read the data out */
+    close(fd);
+    ret = open(argv[1], O_RDWR);
+    if(ret < 0){
+        perror("open");
+        exit(EXIT_FAILURE);
+    }
+    printf("file %s reopened\n", argv[1]);
+    fd = ret;
+    
     /* read data from the device */
-    for(c=0; c< sizeof(buf); c++){
+    for(c=0; c< sizeof(buf); c+=n){
         ret = read(fd, buf, sizeof(buf));
         if(ret == 0){
             printf("read EOF\n");
@@ -68,6 +78,7 @@ int main(int argc, char*argv[]){
     }
     
     close(fd);
+
     return 0;
 
 }
