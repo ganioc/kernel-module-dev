@@ -1,7 +1,7 @@
 
 KERNELDIR := /lib/modules/$(shell uname -r)/build
 
-obj-m := dt-data.o
+obj-m += dt-data.o
 
 PWD :=$(shell pwd)
 
