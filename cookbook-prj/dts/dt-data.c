@@ -68,8 +68,8 @@ static int __init dt_data_init(void){
         print_main_prop(child);
     
     /* Force module unloading ... */
-    //return -EINVAL;
-    return 0;
+    return -EINVAL;
+    // return 0;
 }
 
 static void __exit dt_data_exit(void){
