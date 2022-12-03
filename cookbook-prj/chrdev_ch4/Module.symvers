@@ -1,0 +1,2 @@
+0x00000000	chrdev_device_unregister	/home/firefly/Documents/kernel-module-dev/cookbook-prj/chrdev_ch4/chrdev	EXPORT_SYMBOL
+0x00000000	chrdev_device_register	/home/firefly/Documents/kernel-module-dev/cookbook-prj/chrdev_ch4/chrdev	EXPORT_SYMBOL
