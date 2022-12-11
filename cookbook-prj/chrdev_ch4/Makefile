@@ -2,6 +2,7 @@
 KERNELDIR := /lib/modules/$(shell uname -r)/build
 
 obj-m := chrdev.o
+obj-m += chrdev-req.o
 
 PWD :=$(shell pwd)
 
